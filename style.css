@@ -1,0 +1,204 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.container {
+    background-image: linear-gradient(to right,  #CF005D, #7200AC);
+    height: 100vh;
+    width: 100vw;
+}
+
+.box {
+    margin: 0 auto;
+    background-color: #00022B;
+    width: 60vw;
+    height: 60vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 80px 50px;
+    display: flex;
+}
+
+.cont {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+.left > h1 {
+    font-size: 75px;
+    color: #E2E2E2;
+    font-weight: 600;
+}
+
+.left > p {
+    color: #E2E2E2;
+    padding-top: 20px;
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+.right {
+    display: flex;
+    padding-left: 80px;
+}
+
+input {
+    background-color:#00022B;
+    /* border: none; */
+    padding: 10px 0 8px 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-width: 1px;
+    border-color: #707070;
+}
+
+/* .input[type=text]:focus {
+    border-color: red;
+    box-shadow: 0 0 8px 0 red;
+} */
+
+input, select, textarea{
+    color: white;
+    font-size: 14px;
+}
+
+.top {
+    display: flex;
+}
+
+.top > input {
+    width: 185px;
+}
+
+.lastname {
+    margin-left: 10px;
+}
+
+.middle {
+    margin-top: 20px
+}
+
+.middle > input {
+    width: 384px;
+}
+
+.message {
+    margin-top: 20px
+}
+
+.message > input {
+    width: 384px;
+}
+
+::placeholder {
+    color: rgb(146, 146, 146);
+    font-size: 14px;
+}
+
+.btn {
+    padding-top: 40px;
+}
+
+.button {
+    background-image: linear-gradient(to right,  #CF005D, #7200AC);
+    border: none;
+    width: 185px;
+    height: 40px;
+    color: white;
+    font-weight: 600;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-image: linear-gradient(to right,  rgb(207, 0, 121), rgb(137, 3, 150));
+}
+
+@media only screen and (max-width:982px){
+    .cont {
+        flex-direction: column;
+    }
+
+    .box {
+        width: 60vw;
+        height: 60vh;
+        padding: 80px 50px;
+    }
+
+    .right {
+        padding-left: 0;
+        margin-top: 40px;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .cont {
+        flex-direction: column;
+    }
+
+    .box {
+        width: 60vw;
+        height: 60vh;
+        padding: 80px 50px;
+    }
+
+    .left > h1 {
+        font-size: 47px;
+    }
+
+    .right {
+        padding-left: 0;
+        margin-top: 40px;
+    }
+
+    input, select, textarea{
+        color: white;
+        font-size: 14px;
+    }
+    
+    .top > input {
+        width: 100px;
+    }
+    
+    .lastname {
+        margin-left: 10px;
+    }
+    
+    .middle {
+        margin-top: 20px
+    }
+    
+    .middle > input {
+        width: 210px;
+    }
+    
+    .message {
+        margin-top: 20px
+    }
+    
+    .message > input {
+        width: 210px;
+    }
+    
+    ::placeholder {
+        color: rgb(146, 146, 146);
+        font-size: 14px;
+    }
+    
+    .btn {
+        padding-top: 40px;
+    }
+    
+    .button {
+        width: 210px;
+    }
+
+
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900&display=swap"
+        rel="stylesheet">
+    <title>My Contact Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="cont">
+                <div class="left">
+                    <h1>
+                        Say, hello.
+                    </h1>
+                    <p>GIVE ME YOUR INFO!</p>
+                </div>
+
+                <div class="right">
+                    <form method="POST" name="contact" action="./index.php">
+                        <div class="top">
+                            <input type="text" name="first" placeholder="First Name">
+                            <input type="text" name="last" placeholder="Last Name" class="lastname">
+                        </div>
+
+                        <div class="middle">
+                            <input type="email" name="email" placeholder="Send To Email">
+                        </div>
+
+                        <div class="middle">
+                            <input type="text" name="subject" placeholder="Subject">
+                        </div>
+
+                        <div class="message">
+                            <input type="text" name="message" placeholder="Message">
+                        </div>
+
+                        <div class="btn">
+                            <button name="submit" class="button">Submit</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+    </div class="container">
+
+</body>
+
+</html>
